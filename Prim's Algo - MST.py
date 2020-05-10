@@ -58,24 +58,24 @@ def prims(V, G):
     minEdge = [None,None,float('inf')]
     
   return MST
-  
-# graph vertices are actually represented as numbers
-# like so: 0, 1, 2, ... V-1
-a, b, c, d, e, f = 0, 1, 2, 3, 4, 5
+if __name__ == '__main__':
+  # graph vertices are actually represented as numbers
+  # like so: 0, 1, 2, ... V-1
+  a, b, c, d, e, f = 0, 1, 2, 3, 4, 5
 
-# graph edges with weights
-# diagram of graph is shown above
-graph = [
-  [a,b,2],
-  [a,c,3],
-  [b,d,3],
-  [b,c,5],
-  [b,e,4],
-  [c,e,4],
-  [d,e,2],
-  [d,f,3],
-  [e,f,5]
-]
+  # graph edges with weights
+  # diagram of graph is shown above
+  graph = [
+    [a,b,2],
+    [a,c,3],
+    [b,d,3],
+    [b,c,5],
+    [b,e,4],
+    [c,e,4],
+    [d,e,2],
+    [d,f,3],
+    [e,f,5]
+  ]
 
-# pass the # of vertices and the graph to run prims algorithm 
-print prims(6, graph)
+  # pass the # of vertices and the graph to run prims algorithm 
+  print prims(6, graph)
